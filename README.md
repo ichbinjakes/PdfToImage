@@ -20,7 +20,7 @@ You can also complile the java program from with:
   - Every attempt will be made to keep the compiled file up to date.
 
 ### How does it work?
-The extract_image.py simply reads through its containing directory, searching for pdf files. It then runs the java class PdfToImage passing in pdf files as commandline varargs. Python creates a new for each pdf and the java program extracts the image to the new directory.
+The extract_image.py simply reads through its containing directory, searching for pdf files. It then runs the java class PdfToImage passing in pdf files as commandline varargs. Python creates a new directory for each pdf and the java program extracts the image, saving it to the new directory.
 
 ### Limitations
 Theoretically the program can handle pdf files up to 2Gb, this has not been tested for lack of such a file.
