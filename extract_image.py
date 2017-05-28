@@ -1,3 +1,13 @@
+
+"""
+-> object of pdfs
+-> split at pdf or take string to first .
+-> mkdir with that name
+-> execute java
+
+max theoretical filsize is probably around 2 Gb, this has not been tested.
+"""
+
 import os
 
 def getExtension(string):
@@ -18,12 +28,3 @@ for i in pfdFiles:
     os.mkdir(i[0])
     os.system("java PdfToImage " + "\"" +i[0] + "." + i[1] + "\"")
 
-"""
--> object of pdfs
--> split at pdf or take string to first .
--> mkdir with that name
--> execute java
--> multiprocess
-
-max theoretical filsize is probably around 2 Gb, this has not been tested.
-"""
