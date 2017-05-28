@@ -8,14 +8,18 @@ PdfToImage simply extracts .jpg from within a pdf
 - only tested on linux
 
 ### How do I use it?
-Simply download extract_image.py and PdfToImage.class and copy to the directory containing a single or multiple .pdf files.
+Simply download extract_image.py and PdfToImage.class and copy to the directory containing single or multiple .pdf files.
 From the terminal run:
 ```python
 python extract_images.py
 ```
+A 4mb file with 11 A4 images takes approximately 10 sec to extract.
 
 ### How does it work?
-The python file simply read through its containing directory and looks for pdf files. It the runs the java class PdfToImage passing in the pdf files through the command line varargs. Python creates a new directory named after the pdf and the java program extracts the image from the pdf, saving it in the new directory.
+The extract_image.py simply reads through its containing directory, searching for pdf files. It then runs the java class PdfToImage passing in pdf files as commandline varargs. Python creates a new for each pdf and the java program extracts the image to the new directory.
+
+### Limitations
+Theoretically the program can handle pdf files up to 2Gb, this has not been tested for lack of such a file.
 
 ### Todo
 - potentially implement completely in python
