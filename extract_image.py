@@ -14,7 +14,8 @@ def getExtension(string):
     if len(string.rsplit('.')) > 1:
         return string.rsplit('.')
     else:
-        return ['a', 'a']
+        # dummy list
+        return ['_', '_']
 
 ls = os.listdir()
 files = [getExtension(i) for i in ls]
