@@ -13,6 +13,11 @@ From the terminal run:
 ```python
 python extract_images.py
 ```
+Alternatively you can run it for a single file from the terminal:
+```
+$java PdfToImage </path/to/file.pdf>
+```
+
 A 4mb file with 11 A4 images takes approximately 10 sec to extract.
 
 You can also complile the java program from with:
