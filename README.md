@@ -29,7 +29,7 @@ The extract_image.py simply reads through its containing directory, searching fo
 
 ### Limitations
 Theoretically the program can handle pdf files up to 2Gb, this has not been tested for lack of such a file.
-Such a file could require upwards of 4Gb of ram.
+Such a file could require upwards of 4Gb of ram to run.
 
 ### Todo
 - potentially implement completely in python
