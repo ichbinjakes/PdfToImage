@@ -22,7 +22,6 @@ A 4mb file with 11 A4 images takes approximately 10 sec to extract.
 
 You can also complile the java program from with:
 ```javac PdfToImage.java``` 
-  - Every attempt will be made to keep the compiled file up to date.
 
 ### How does it work?
 The extract_image.py simply reads through its containing directory, searching for pdf files. It then runs the java class PdfToImage passing in pdf files as commandline varargs. Python creates a new directory for each pdf and the java program extracts the image, saving it to the new directory.
